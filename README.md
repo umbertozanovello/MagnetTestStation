@@ -21,12 +21,19 @@ A test station for assessing the polarization of small permanent magnets and the
 ## Usage
 
 1. Connect the Arduino board to a USB port
+   
 2. Prepare all the necessary connections. The following picture shows the connection of a single Hall sensor to the A0 analog pin of Arduino. Other Hall sensors can be connected to the other analog pins. At the present stage, the User Interface is designed to manage a maximum number of Hall sensors equal to four.
 
 ![](./docs/images/singleStation-ArduinoConnections.png)
 
-
-
-3. Add the analog pin names to which the Hall sensors are connected into the int array ...
+3. Add the analog pin names to which the Hall sensors are connected into the short int array *pins* inside the Arduino sketch code "Arduino/magnetTestStation.ino"
+   ```cpp
+   short pins[] = {A0};
+   ```  
 Upload the Arduino sketch into the Arduino board.
+
 4. Run the Python script *mainInterface.py* in order to open the Main User Interface. Select the number of Hall sensor that have to be read, the sensors sensitivity, the Arduino board serial port and the log file name. Press the *Connect* button in order to establish a connection with the Arduino board. When ready, press the *Start Measurements* button to start the measuring process. During the measurement process, it is possible to store the measured data into the log file by pressing the *Store* button. Finally it is possible to set a zero by pressing the *Zero* button.
+
+![](./docs/images/ScreenshotUserInterface.png)
+
+![](./docs/images/ScreenshotLogFile.png)
