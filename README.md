@@ -26,7 +26,7 @@ A test station for assessing the polarization of small permanent magnets and the
 
 ![](./docs/images/singleStation-ArduinoConnections.png)
 
-3. Add the analog pin names to which the Hall sensors are connected into the short int array *pins* inside the Arduino sketch code "Arduino/magnetTestStation.ino"
+3. Add the analog pin names to which the Hall sensors are connected into the short int array *pins* inside the Arduino sketch code "ArduinoScript/magnetTestStation.ino"
    ```cpp
    short pins[] = {A0};
    ```  
