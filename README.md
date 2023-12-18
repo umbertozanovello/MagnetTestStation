@@ -4,13 +4,21 @@ A test station for assessing the polarization of small permanent magnets and the
 
 ## Required Material
 
-- Arduino board
-- A1324LUA-T Hall sensor
-- 3D Printer for printing the frame
-- Python 3 with the following libraries installed:
-    - PyQt6
-    - numpy
-    - pyserial
+- 1 Arduino UNO
+	- alternatively any Arduino board provided with a USB interface, one Vcc and GND pin and one analog input pin
+- 1 USB cable (to connect the Arduino board to the computer)
+- 3 jumper cables (to connect the Hall sensor to the Arduino board)
+- 1 A1324LUA-T Hall sensor
+- 1 computer (with Windows or Linux)
+- frame and spacer parts as provided in this repository (see [CAD models](./CAD-Model/) or the respective [release]() for STL exports); manufacturing them requires access to a 3D printer
+
+**Software dependencies:**
+
+Python 3 with the following libraries installed:
+
+- PyQt6
+- numpy
+- pyserial
 
 ## Description
 
